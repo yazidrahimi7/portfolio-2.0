@@ -6,7 +6,7 @@
         <div 
             class="container"> 
            <h3>Hi, nice to meet you</h3>
-           <p>I am Muhammad Yazid 🐱‍👤, a Web Developer based in Kuala Lumpur, Malaysia. I'm really passionate 
+           <p>I am Muhammad Yazid, a Web Developer based in Kuala Lumpur, Malaysia. I'm really passionate 
 about coding and I really enjoy design and build user interfaces. Besides coding, I love to play video 
 games and one of my favourite is Dota 2, and I also love listening to My Chemical Romance.</p> 
 
