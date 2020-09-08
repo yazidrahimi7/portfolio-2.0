@@ -144,7 +144,7 @@
                 fill: transparent;
             }
             to {
-                fill: white;
+                fill: $main;
             }
         }
     }
