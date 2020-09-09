@@ -38,8 +38,8 @@
     $main: #F6F5F5;
     $primary: #101010;
 
-    $font1: "Made Tommy", Arial, Helvetica, sans-serif;
-    $font2: 'Source Sans Pro', sans-serif, Arial, Helvetica, sans-serif;
+    $font1:  'Source Sans Pro', sans-serif;
+    $font2:  'Roboto', sans-serif;
 
 .skills 
 {   
@@ -82,7 +82,7 @@
 
     .content {
             margin: auto;
-            width: 46%;
+            width: 42%;
             padding: 10px;        
 
         img {

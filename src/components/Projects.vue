@@ -48,8 +48,8 @@
     $p-2: #ADD8E6;
     $p-3: #FCFCC1;
 
-    $font1: "Made Tommy", Arial, Helvetica, sans-serif;
-    $font2: 'Source Sans Pro', sans-serif, Arial, Helvetica, sans-serif;
+    $font1:  'Source Sans Pro', sans-serif;
+    $font2:  'Roboto', sans-serif;
 
 .projects 
 {
@@ -130,7 +130,7 @@
     }
 
     .container-first:hover {
-        h3, p {
+        h3 {
         transform:translateY(-10px) 
             }
     }

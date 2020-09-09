@@ -25,14 +25,16 @@ games and one of my favourite is Dota 2, and I also love listening to My Chemica
     $main: #F6F5F5;
     $primary: #101010;
     $secondary: #484848;
-    $tertiary: #145374;
+    $tertiary: #39867c;
 
-    $font1: "Made Tommy", Arial, Helvetica, sans-serif;
-    $font2: 'Source Sans Pro', sans-serif, Arial, Helvetica, sans-serif;
+     $font1:  'Source Sans Pro', sans-serif;
+    $font2:  'Roboto', sans-serif;
 
 .about 
 {        
-    h3 { transition: transform .2s; }
+    h3 { 
+        transition: transform .2s; 
+    }
     .container:hover {
         h3 {
             transform:translateY(-10px) 
