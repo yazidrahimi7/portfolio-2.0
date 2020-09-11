@@ -6,21 +6,21 @@
         <div class="container">
             <div class="content d-flex flex-row">
                 <div class="svg">
-                    <img src="../assets/svg/html5.svg">
-                    <img src="../assets/svg/css3.svg">
-                    <img src="../assets/svg/javascript.svg">
-                    <img src="../assets/svg/git.svg">
-                    <img src="../assets/svg/php.svg">
-                    <img src="../assets/svg/mysql.svg">   
-                    <img src="../assets/svg/wordpress.svg">   
-                    <img src="../assets/svg/vue-dot-js.svg">   
+                    <img src="../assets/svg/html5.svg" alt="html"> 
+                    <img src="../assets/svg/css3.svg" alt="css3">
+                    <img src="../assets/svg/javascript.svg" alt="js">
+                    <img src="../assets/svg/git.svg" alt="git">
+                    <img src="../assets/svg/php.svg" alt="php">
+                    <img src="../assets/svg/mysql.svg" alt="mysql">   
+                    <img src="../assets/svg/wordpress.svg" alt="wordpress">   
+                    <img src="../assets/svg/vue-dot-js.svg" alt="vue.js">   
 
-                    <img src="../assets/svg/laravel.svg">   
-                    <img src="../assets/svg/adobexd.svg">   
-                    <img src="../assets/svg/adobeillustrator.svg">   
-                    <img src="../assets/svg/adobephotoshop.svg">   
-                    <img src="../assets/svg/figma.svg">   
-                    <img src="../assets/svg/sass.svg">   
+                    <img src="../assets/svg/laravel.svg" alt="laravel">   
+                    <img src="../assets/svg/adobexd.svg" alt="adobexd">   
+                    <img src="../assets/svg/adobeillustrator.svg" alt="adobeillustrator">   
+                    <img src="../assets/svg/adobephotoshop.svg" alt="adobephotoshop">   
+                    <img src="../assets/svg/figma.svg" alt="figma">   
+                    <img src="../assets/svg/sass.svg" alt="sass">   
                 </div>
             </div>  
         </div>
@@ -85,25 +85,23 @@
             width: 42%;
             padding: 10px;        
 
-        img {
-            width: 70px;
-            margin: 10px; 
-            transition: transform .2s;  
+            img {
+                width: 70px;
+                margin: 10px;
+                transition: transform .2s;         
+            }
+            img:hover {
+                transform:translateY(-10px) 
+            }
+  
+            @media screen and (max-width: 600px){   
+                width: 100%;
+                
+                img {
+                    width: 40px;
+                }
+            }
         }
-        img:hover {
-             transform:translateY(-10px) 
-        }
-
-         @media screen and (max-width: 600px){   
-            width: 100%;
-             
-              img {
-                  width: 40px;
-              }
-        }
-    }
-    
-
     }
 }
 </style>

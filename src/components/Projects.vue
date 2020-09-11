@@ -10,7 +10,7 @@
                         <p>A Pokemon battle between Charizard and Pikachu! <br> My first Vue JS project.</p> 
                 </div>
                 <div class="col-sm-6 col-xs-12">
-                        <img src="../assets/2.png" class="pokemon-img">
+                        <img src="../assets/2.png" class="pokemon-img" alt="pokemon-img">
                 </div>    
             </div>
         </div>
@@ -18,12 +18,12 @@
             <div class="row">
                <div class="content-left col-sm-6 col-xs-12">
                    <h3>iSMS 1.0</h3>
-                   <img src="../assets/3.jpg" class="consec-img">
+                   <img src="../assets/3.jpg" class="consec-img" alt="isms 1.0">
                    <p>Send SMS to remind customers directly to their <br> phones easily with API integration.</p> 
                </div>
                <div class="content-right col-sm-6 col-xs-12">
                    <h3>DB System</h3>
-                   <img src="../assets/4.png" class="consec-img">
+                   <img src="../assets/4.png" class="consec-img" alt="db system">
                    <p>Stored procedure and function methods to enhanced the database. <br> A great way to enhanced my MySQL skills.</p> 
                </div>
             </div>
@@ -62,7 +62,7 @@
                
                 p {
                     font-size: 17px;
-                    text-align: left;                    
+                    text-align: left;                   
                 }           
             }
 
@@ -115,8 +115,6 @@
             transition: transform .2s;       
         }
         
-       
-
         .pokemon-img {
             width: 100%;
             height: 100%;
@@ -124,15 +122,14 @@
         }
 
         .pokemon-text {
-            text-align: center;
             margin: auto;
         }
     }
 
     .container-first:hover {
         h3 {
-        transform:translateY(-10px) 
-            }
+            transform:translateY(-10px) 
+        }
     }
 
     .container-second {
@@ -147,11 +144,11 @@
             font-size: 50px;
         }
 
-    .consec-img {
-                filter: drop-shadow(0px 6px 6px rgba(16,27,30,0.5)); 
-                max-width: 90%;   
-                height: auto;
-            }
+        .consec-img {
+            filter: drop-shadow(0px 6px 6px rgba(16,27,30,0.5)); 
+            max-width: 90%;   
+            height: auto;
+        }
         
             .content-left {
             text-align: center;

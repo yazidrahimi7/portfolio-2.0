@@ -12,15 +12,15 @@
                    <br><br><br> Muhammad Yazid bin Noor Rahimi <br> Kuala Lumpur, Malaysia. </p> 
                    <div class="svg">
                        <a href="https://github.com/yazidrahimi7">
-                           <img src="../assets/svg/github.png">
+                           <img src="../assets/svg/github.png" alt="github">
                        </a>
                        <a href="https://www.linkedin.com/in/muhdyazid/">
-                           <img src="../assets/svg/linkedin3.png">
+                           <img src="../assets/svg/linkedin3.png" alt="linkedin">
                         </a>    
                     </div>
                 </div>
                 <div class="contact-img col-md-5 col-sm-12 col-xs-12 d-none d-sm-block">
-                    <img src="../assets/IMG_1.jpg" class="image" alt="" loading="lazy">
+                    <img src="../assets/IMG_1.jpg" class="image" alt="yazidrahimi" loading="lazy">
                     
                 </div>
             </div>
