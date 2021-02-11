@@ -96,9 +96,10 @@
   
             @media screen and (max-width: 600px){   
                 width: 100%;
-                
+                text-align: center;
+
                 img {
-                    width: 40px;
+                    width: 40px;  
                 }
             }
         }

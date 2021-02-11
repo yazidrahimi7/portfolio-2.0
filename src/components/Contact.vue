@@ -97,7 +97,8 @@
                 font-size: 50px;
                 
                 a {
-                    color: $main;                
+                    color: $main; 
+                     overflow-wrap: break-word;               
                 }
                     a:hover { 
                         text-decoration-color: $main;
@@ -127,11 +128,11 @@
                 width: 50px;
                 margin: 55px 5px;
                 float: left;
-                transition: transform .2s;  
+                // transition: transform .2s;  
             }
-            img:hover {
-                 transform: scale(1.2) 
-            }
+            // img:hover {
+            //      transform: scale(1.2) 
+            // }
         }
     
         .contact-img {     

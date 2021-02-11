@@ -157,7 +157,9 @@
             }
             h4 { 
                 font-size: 20px; 
-                padding: 15px 5px;
+                padding: 25px 15px;
+                margin: 0;
+                width: auto;
             }
             p { 
                 font-size: 17px; 
