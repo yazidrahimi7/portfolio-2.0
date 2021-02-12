@@ -45,12 +45,12 @@
       </transition>
 
       <a href="#About" v-smooth-scroll>
-        <svg id="more-arrows">
-          <!-- <polygon
+        <!-- <svg id="more-arrows"> -->
+        <!-- <polygon
             class="arrow-top"
             points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "
           /> -->
-          <polygon
+        <!-- <polygon
             class="arrow-middle"
             points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "
           />
@@ -58,9 +58,14 @@
             class="arrow-bottom"
             points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "
           />
-        </svg>
+        </svg> -->
+
+        <div class="encircle bounce animated">
+          <div class="arrow"></div>
+        </div>
       </a>
     </div>
+
     <!-- </transition>     -->
   </div>
 </template>
@@ -193,7 +198,7 @@ $font2: "Roboto", sans-serif;
       }
     }
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     .content {
       padding: 100px 0;
     }
@@ -220,42 +225,132 @@ $font2: "Roboto", sans-serif;
   //   }
 
   /* Arrow & Hover Animation */
-  #more-arrows {
-    width: 75px;
-    height: 65px;
+  // #more-arrows {
+  //   width: 75px;
+  //   height: 65px;
+  //   position: absolute;
+  //   bottom: 25px;
+  //   margin: auto;
+  //   left: 0;
+  //   right: 0;
+
+  //   &:hover {
+  //     polygon {
+  //       fill: #fff;
+  //       transition: all 0.2s ease-out;
+
+  //       &.arrow-bottom {
+  //         transform: translateY(-18px);
+  //       }
+
+  //       // &.arrow-top {
+  //       //   transform: translateY(18px);
+  //       // }
+  //     }
+  //   }
+  // }
+
+  // polygon {
+  //   fill: #fff;
+  //   transition: all 0.2s ease-out;
+
+  //   &.arrow-middle {
+  //     opacity: 0.75;
+  //   }
+
+  //   // &.arrow-top {
+  //   //   opacity: 0.5;
+  //   // }
+  // }
+
+  // @import "compass/css3";
+
+  @mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+      @content;
+    }
+    @-moz-keyframes #{$name} {
+      @content;
+    }
+    @-ms-keyframes #{$name} {
+      @content;
+    }
+    @keyframes #{$name} {
+      @content;
+    }
+  }
+  @mixin animation($animation) {
+    -webkit-animation: #{$animation};
+    -moz-animation: #{$animation};
+    -ms-animation: #{$animation};
+    animation: #{$animation};
+  }
+  @mixin transform($transform) {
+    -webkit-transform: $transform;
+    -moz-transform: $transform;
+    -ms-transform: $transform;
+    transform: $transform;
+  }
+
+  @include keyframes(bounce) {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      @include transform(translateY(0));
+    }
+    40% {
+      @include transform(translateY(-20px));
+    }
+    60% {
+      @include transform(translateY(-10px));
+    }
+  }
+
+  body {
+    background: black;
+  }
+
+  .encircle {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    border: solid 2px white;
     position: absolute;
+
     bottom: 25px;
     margin: auto;
     left: 0;
     right: 0;
 
-    &:hover {
-      polygon {
-        fill: #fff;
-        transition: all 0.2s ease-out;
 
-        &.arrow-bottom {
-          transform: translateY(-18px);
-        }
-
-        // &.arrow-top {
-        //   transform: translateY(18px);
-        // }
-      }
+    @media only screen and (max-width: 800px) { 
+      width: 25px;
+     height: 25px;
+     border-radius: 20px;
+     border: solid 2px white;
     }
   }
 
-  polygon {
-    fill: #fff;
-    transition: all 0.2s ease-out;
+  .arrow {
+    margin: 0 auto;
+    margin-top: 13px;
+    width: 30px;
+    height: 30px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+    background-size: contain;
 
-    &.arrow-middle {
-      opacity: 0.75;
+     @media only screen and (max-width: 800px) { 
+      width: 15px;
+     height: 15px;
+     margin-top: 2px;
+     
     }
+  }
 
-    // &.arrow-top {
-    //   opacity: 0.5;
-    // }
+  .bounce {
+    @include animation(bounce 2s infinite);
   }
 }
 </style>

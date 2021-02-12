@@ -176,7 +176,7 @@ $font2: "Roboto", sans-serif;
 
       /* Position the tooltip text - see examples below! */
       position: absolute;
-      z-index: 1;
+      z-index: 11;
       bottom: 110%;
       left: 50%;
       margin-left: -60px;
