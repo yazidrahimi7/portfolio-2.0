@@ -40,7 +40,7 @@
       <transition name="fade" mode="out-in" appear>
         <h4>
           Web Developer based in Malaysia,<br />
-          specializing in Digital Media Design
+          specialized in Digital Media Design
         </h4>
       </transition>
 
