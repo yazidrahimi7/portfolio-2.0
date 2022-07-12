@@ -39,7 +39,7 @@
       </svg>
       <transition name="fade" mode="out-in" appear>
         <h4>
-          Web Developer based in Malaysia,<br />
+          Product Designer based in Malaysia,<br />
           specialized in Digital Media Design
         </h4>
       </transition>
