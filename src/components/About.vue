@@ -7,7 +7,7 @@
       <h3>Hi, nice to meet you</h3>
       <p>
         I am Yazid, a Product Designer based in Kuala Lumpur, Malaysia.
-        I can codes and I really enjoy design and build
+        I can code and I really enjoy design and build
         user interfaces and a well-organized person. I'm incredibly determined 
         when I see something amazing.
       </p>
